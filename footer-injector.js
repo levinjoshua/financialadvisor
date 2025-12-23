@@ -1,6 +1,6 @@
 async function loadFooter(){
     try{
-        const response = await fetch('footer.html')
+        const response = await fetch('../footer.html')
         const footerHTML = await response.text()
         document.body.insertAdjacentHTML('beforeend', footerHTML)
     }catch (error){
@@ -10,3 +10,4 @@ async function loadFooter(){
 
 
 loadFooter()
+
