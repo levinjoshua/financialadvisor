@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.landing-page{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/WL-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.sub-page{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/EDUCATION-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.invest{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/END-6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.vat{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/VAT-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;  
+}
+.whole-life{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/WL-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.mmf{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/MMF-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.pension{
+    position: relative;
+    background: linear-gradient(rgb(255, 165, 0, .1), rgb(255, 165, 0)), url('/images/ANNUITY-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.fa-banner{
+    display: flex;
+    font-size: .9rem;
+    background-color: #fff;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    transition: .5s;
+    z-index: 999;
+}
+.fixed-menu{
+    position: fixed;
+    top: 53px;
+    right: 0;
+    width: 100vw;
+    transition: .5s;
+    z-index: 999;
+}
+.logo, .fa-details{
+    padding: 10px;
+}
+.logo{
+    flex-basis: 20%;
+    text-align: center;
+    border-right: 2px solid rgb(255, 165, 0);
+    align-content: center;
+}
+.fa-details{
+    flex-basis: 80%;
+}
+.fa-banner h1{
+    text-transform: capitalize;
+    color: rgb(9, 0, 128);
+}
+.fa-banner span{
+    color: rgb(255, 165, 0);
+    margin-right: 20px;
+}
+.fa-details .fa-whatsapp{
+    margin-right: 5px;
+}
+.menu{
+    background-color: rgb(9, 0, 128, .7);
+}
+.menu ul{
+       text-align: center;
+       padding: 20px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+@media screen and (min-width:1000px) {
+    .menu ul li{
+    border-right: 2px solid rgb(255, 165, 0);
+}
+.menu ul li:last-child{
+    border-right: none;
+    margin-right: 0;
+}
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    margin-right: 8px;
+}
+.menu ul li a span{
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 165, 0);
+    bottom: -4px;
+    transition: .5s ease-in-out;
+}
+.menu ul li a:hover span{
+    width: 100%;
+}
+#menu-btn{
+    color: #fff;
+    background-color: rgb(255, 165, 0);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#invest li{
+    display: none;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    color: #fff;
+    background-color: rgb(9, 0, 128, .4);
+    padding: 10px;
+    z-index: 1;
+}
+.banner-text h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.banner-text p span{
+    color: rgb(255, 165, 0);
+}
+.bottom-text{
+    /* color: rgb(255, 165, 0); */
+    text-align: center;
+    margin-top: 20px;
+}
+.bottom-text p{
+    margin-bottom: 10px;
+}
+.bottom-text p:last-child{
+    color: #fff;
+}
+/* EDUCATION */
+.article-section{
+    width: 80%;
+    margin: 0px auto;
+}
+.heading{
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(9, 0, 128);
+}
+.section-wrapper{
+    margin: 20px 0;
+}
+.bg-color{
+    background-color: #efefef;
+    padding: 20px 0px;
+}
+.heading h1{
+    text-transform: capitalize;
+}
+.article-section h2{
+    color: rgb(255, 165, 0);
+    margin-bottom: 20px;
+}
+.article-section span{
+    color: rgb(9, 0, 128);
+}
+.article-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article-text span{
+    color: rgb(9, 0, 128);
+    font-size: 1.1rem;
+}
+.article-text i{
+    margin-right: 5px;
+    color: rgb(255, 165, 0);
+}
+.article-text h4{
+    color: rgb(255, 165, 0);
+    margin-bottom: 10px;
+}
+.text-align{
+    display: flex;
+    margin-bottom: 10px;
+}
+.edu-text p{
+    line-height: 20px;
+}
+.edu-text .article-text{
+    margin-top: 10px;
+}
+.edu-text h3{
+    color: rgb(9, 0, 128);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.article-col{
+    flex-basis: 48%;
+}
+.article-img{
+    margin-bottom: 10px;
+}
+.article-col img{
+    width: 100%;
+}
+.article-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+.article-btn a{
+    text-decoration: none;
+    color: rgb(9, 0, 128);
+    border: 2px solid rgb(9, 0, 128);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+}
+.article-btn a span{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(9, 0, 128);
+    transition: .5s ease-in-out;
+}
+.article-btn a:hover{
+    color: #fff;
+}
+.article-btn a:hover span{
+    width: 100%;
+    z-index: -1;
+}
+.article-col ul li{
+    list-style: decimal;
+    color: rgb(9, 0, 128);
+    margin-left: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.whole-life span{
+    color: rgb(9, 0, 128);
+}
+.article-row .top-text ul li{
+    text-transform: capitalize;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.invest-text{
+    text-align: center;
+}
+@media screen and (max-width:900px){
+    .col-fold{
+        flex-basis: 100%;
+    }
+}
+/* MIDLE IMAGE */
+.mid-img{
+    position: relative;
+    background: linear-gradient(rgb(9, 0, 128, .2),rgb(9, 0, 128, .8)),url('images/ANNUITY-4.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:1024px) {
+    .mid-img{
+        height: 27vh;
+    }
+}
+.mid-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    color: #fff;
+    background-color: rgb(255, 165, 0, .2);
+    padding: 10px;
+    text-align: center;
+}
+.mid-text h1{
+    margin-bottom: 10px;
+}
+.mid-text p{
+    margin-top: 10px;
+}
+.mid-text p i{
+    margin-right: 5px;
+    color: rgb(253, 198, 96);
+}
+
+@media screen and (max-width:1024px) {
+    .mid-text{
+        width: 80%;
+    }
+    .mid-text h1{
+        font-size: 1rem;
+    }
+}
+.article-text .blue-color{
+    color: rgb(9, 0, 128);
+}
+.article-text .note-text{
+    background-color: rgb(9, 0, 128);
+    color: #efefef;
+    padding: 20px 10px;
+}
+.note-text h3, .note-text span{
+    color: rgb(255, 165, 0);
+}
+/* SCROLL BUTTON */
+.scroll-btn{
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 2px solid rgb(9, 0, 128);
+   background-color: rgb(255, 255, 255, .2);
+   border-radius: 50%;
+   position: fixed;
+   right: 20px;
+   bottom: 40px;
+   z-index: 900;
+   display: none;
+}
+.scroll-btn a{
+    text-decoration: none;
+    color: rgb(255, 165, 0);
+}
+/* FOOTER STYLING */
+footer{
+    background-color: rgb(9, 0, 128);
+    padding: 30px 0;
+    position: relative;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:40px auto;
+}
+.footer-col{
+    flex-basis: 50%;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-details{
+    position: relative;
+    z-index: 900;
+    /* position: relative; */
+}
+.footer-details i{
+    color: rgb(255, 165, 0);
+}
+.footer-details p{
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 26px;
+}
+.footer-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: .2;
+}
+.footer-bottom{
+    background-color: rgb(255, 165, 0);
+    color: rgb(9, 0, 128);
+    text-align: center;
+    font-size: .9rem;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    color: #fff;
+}
+@media screen and (max-width:900px) {
+    .parting-shot p{
+        font-size: .9rem;
+    }
+    .bg-color .article-btn{
+        margin-bottom: 20px;
+    }
+    .fa-banner{
+        font-size: .6rem;
+    }
+    .banner-text{
+        width: 80%;
+    }
+   .article-col img{
+    margin-top: 30px;
+   }
+   .parting-shot{
+    width: 80%;
+}
+}
+@media screen and (max-width:760px) {
+     .article-col{
+    flex-basis: 100%;
+   }
+}
+@media screen and (min-width:760px) {
+    .fa-details{
+        text-align: center;
+    }
+}
+@media screen and (max-width:920px) {
+    #menu-btn{
+        display: block;
+        z-index: 1000;
+    }
+    .menu{
+        height: 100vh;
+        width: 270px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-top: 100px;
+        z-index: 999;
+        transition: .5s ease-in-out;
+    }
+    .menu ul{
+        text-align: justify;
+    }
+    .menu ul li{
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .article-img{
+    height: 400px;
+}
+.article-col img{
+    width: 100%;
+    height: 100%;
+}
+}
+@media screen and (max-width:760px) {
+    .footer-col{
+    flex-basis: 100%;
+    }
+    .footer-left{
+        margin-bottom: 40px;
+    }
+    .footer-right{
+        text-align: left;
+    }
+}
